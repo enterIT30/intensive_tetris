@@ -105,7 +105,7 @@ const game = {
 
       for (let j = 0; j < row.length; j++) {
         const fullFigure = row[j];
-        if (fullFigure === 'x') {
+        if (fullFigure !== '0') {
           area[y + i][x + j] = tetramino[i][j];
         }
       }
@@ -122,7 +122,7 @@ const game = {
         }
         if (!this.area[y + i] ||
             !this.area[y + i][x + j] ||
-            this.area[y + i][x + j] === 'x') {//? не понял логику
+            this.area[y + i][x + j] !== '0') {//? не понял логику
           return false;
         }
       }
@@ -136,7 +136,7 @@ const game = {
     for (let i = 0; i < tetramino.length; i++) {
       const row = tetramino[i];
       for (let j = 0; j < row.length; j++) {
-        if (row[j] === 'x') {
+        if (row[j] !== '0') {
           this.area[y + i][x + j] = tetramino[i][j];
         }
       }
@@ -165,7 +165,7 @@ let showArea = area => {
 
     for (let x = 0; x < line.length; x++) {
       const cell = line[x];
-      if (cell === 'x') {
+      if (cell !== '0') {
         context.fillStyle = '#f7971d';
         context.fillRect(x * SIZE_BLOCK, y * SIZE_BLOCK, SIZE_BLOCK, SIZE_BLOCK); //? методы context-a
         context.strokeStyle = '#202020';

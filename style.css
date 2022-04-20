@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'tetris';
-  src: url('/fonts/tetris.woff2') format('woff2'),
-       url('/fonts/tetris.woff2') format('woff');
+  src: url('fonts/tetris.woff2') format('woff2'),
+       url('fonts/tetris.woff2') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
