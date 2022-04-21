@@ -43,3 +43,11 @@ body {
   border: solid #fff;
   border-width: 0 2px 5px 2px;
 }
+.preview-text {
+  font-family: 'tetris', sans-serif;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 200px;
+  
+}
