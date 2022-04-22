@@ -5,6 +5,7 @@ import { Controller } from './modules/controller.js';
 export const SIZE_BLOCK = 35;
 export const COLUMNS = 10;
 export const ROWS = 20;
+export const startWrapper = document.querySelector('.start-wrapper');
 
 const game = new Game();
 const view = new View(document.querySelector('.container'));

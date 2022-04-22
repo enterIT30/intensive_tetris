@@ -18,23 +18,40 @@
 body {
   /* font-family: sans-serif; */
   background-color: #202020;
+  color: #fff;
 }
 
+.start-wrapper {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  
+}
 .container {
-  width: 400px;
+  width: 963px;
+  height: 100vh;
   margin: 0 auto;
+  display: grid;
+  gap: 50px;
+  align-items: center;
+  align-self: center;
+  grid-template-areas: 
+  'next game score'
+  'next game score';
 }
 
 .tetris-title {
   font-family: 'Tetris Blocks';
-  text-align: center;
-  line-height: 70px;
-  margin: 25px 0 75px;
-  color: #fff;
+  margin: 0 0 45px 0;
+  font-size: 60px;
 }
 
-.tetris-title span {
+.tetris-sutitle {
   font-family: 'tetris', sans-serif;
+  font-size: 60px;
+  margin: 0 0 30px;
 }
 
 .game-area {
@@ -43,11 +60,13 @@ body {
   border: solid #fff;
   border-width: 0 2px 5px 2px;
 }
-.preview-text {
+.preview-button {
+  grid-column: 2 / 3;
   font-family: 'tetris', sans-serif;
   color: #fff;
+  border: 2px solid #fff;
+  padding: 40px 70px;
   font-size: 30px;
   text-align: center;
-  margin-top: 200px;
-  
+  margin: 0;
 }
